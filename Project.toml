@@ -30,9 +30,6 @@ Rasters = "0.14.2"
 Test = "1"
 TOML = "1.0.3"
 
-[sources]
-ConScape = {rev = "dev", url = "https://github.com/ConScape/ConScape.jl"}
-
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
