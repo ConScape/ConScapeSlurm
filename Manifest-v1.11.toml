@@ -2,7 +2,7 @@
 
 julia_version = "1.11.8"
 manifest_format = "2.0"
-project_hash = "e5999b72531ef35ed887363c4cf0a59c56707299"
+project_hash = "9a59fb8a5270d02eedbd9e7daf81c2f064e1b1b6"
 
 [[deps.AbstractTrees]]
 git-tree-sha1 = "2d9c9a55f9c93e8887ad391fbae72f8ef55e1177"
@@ -225,7 +225,7 @@ version = "1.1.1+0"
 deps = ["ArnoldiMethod", "CommonSolve", "ConstructionBase", "FillArrays", "GeometryOps", "Graphs", "LinearAlgebra", "Mmap", "Random", "Rasters", "ReadOnlyArrays", "SimpleWeightedGraphs", "SortTileRecursiveTree", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "139e0d4392cfda3279bc7c074be5766373a0cce9"
 repo-rev = "dev"
-repo-url = "https://github.com/ConScape/ConScape.jl.git"
+repo-url = "https://github.com/ConScape/ConScape.jl"
 uuid = "2ba2d6f2-f651-5162-bda8-601e45ce5244"
 version = "0.3.0"
 
