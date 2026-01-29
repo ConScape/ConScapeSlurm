@@ -27,4 +27,11 @@ ConScape = "0.3.0"
 DataFrames = "1.5.0"
 PrecompileTools = "1.2.1"
 Rasters = "0.14.2"
+Test = "1"
 TOML = "1.0.3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

@@ -7,18 +7,18 @@ function problem(args...)
     alpha = s["alpha"]::Float64
     theta = s["theta"]::Float64
     # Define a distance transformation
-    movement_mode = RandomisedShortestPath(ExpectedCost();
+    movement = RandomisedShortestPath(ExpectedCost();
         distance_transformation=x -> exp(-x * alpha),
         theta,
     )
 
     # Define measures
     measures = (;
-        ch=ConnectedHabitat(),
+        fh=FunctionalHabitat(),
         betk=Betweenness(QualityAndProximityWeighted()),
     )
 
     ## Specify the problem
-    solver = VectorSolver()
-    problem = ConScape.Problem(; movement_mode, measures, solver)
+    solver = ColumnSolver()
+    ConScapeProblem(; movement, measures, solver)
 end
