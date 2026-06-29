@@ -223,9 +223,9 @@ version = "1.3.0+1"
 
 [[deps.ConScape]]
 deps = ["ArnoldiMethod", "CommonSolve", "ConstructionBase", "FillArrays", "GeometryOps", "Graphs", "LinearAlgebra", "Mmap", "Random", "Rasters", "ReadOnlyArrays", "SimpleWeightedGraphs", "SortTileRecursiveTree", "SparseArrays", "WoodburyMatrices"]
-git-tree-sha1 = "139e0d4392cfda3279bc7c074be5766373a0cce9"
-repo-rev = "dev"
-repo-url = "https://github.com/ConScape/ConScape.jl.git"
+git-tree-sha1 = "16eddad1c5f4b9b72bfd529eaa23bf03a9f2ad72"
+repo-rev = "zero_circle"
+repo-url = "https://github.com/ConScape/ConScape.jl/"
 uuid = "2ba2d6f2-f651-5162-bda8-601e45ce5244"
 version = "0.3.0"
 

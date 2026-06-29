@@ -1,4 +1,5 @@
 dataset_name,buffer,nwindows,centersize,alpha,theta,source_qualities,target_qualities,affinities,path
-alpine_bees,200,15,16,0.02,0.5,"AlpineHSM.tif","AlpineHSM_target.tif","AlpineHSM.tif","/cluster/projects/nn11055k/conscape/Bees/Alpine/"
-boreal_bees,200,15,16,0.02,0.5,"BorealHSM.tif","BorealHSM_target.tif","BorealHSM.tif","/cluster/projects/nn11055k/conscape/Bees/Boreal/"
-temperate_bees,200,15,16,0.02,0.5,"TemperateHSM.tif","TemperateHSM_target.tif","TemperateHSM.tif","/cluster/projects/nn11055k/conscape/Bees/Temperate/"
+ostlanded,100,20,20,0.033,1.0,"ostlanded_spruceForest_quality.tif","ostlanded_spruceForest_quality.tif","ostlanded_spruceForest_permeability.tif","/cluster/projects/nn11055k/conscape/Forest/Naturalness/spruce/ostlanded/"
+spruce,100,20,20,0.033,1.0,"spruceForest_quality.tif","spruceForest_quality.tif","spruceForest_permeability.tif","/cluster/projects/nn11055k/conscape/Forest/Naturalness/spruce/"
+pine,100,20,20,0.033,1.0,"pineForest_quality.tif","pineForest_quality.tif","pineForest_permeability.tif","/cluster/projects/nn11055k/conscape/Forest/Naturalness/pine/"
+broadleaf,100,20,20,0.033,1.0,"broadleafForest_quality.tif","broadleafForest_quality.tif","broadleafForest_permeability.tif","/cluster/projects/nn11055k/conscape/Forest/Naturalness/broad/"

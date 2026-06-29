@@ -14,8 +14,10 @@ function problem(args...)
 
     # Define measures
     measures = (;
-        fh=FunctionalHabitat(),
-        betk=Betweenness(QualityAndProximityWeighted()),
+        fh =                FunctionalHabitat(),
+        betk =              Betweenness(QualityAndProximityWeighted()),
+        sens_sum_perm =     SensitivityAnalysis(; wrt=StepCostToLikelihood(), type=Sensitivity(), metric=Summation()),
+        sens_sum_quality =  SensitivityAnalysis(; wrt=Quality(), type=Sensitivity(), metric=Summation()),
     )
 
     ## Specify the problem

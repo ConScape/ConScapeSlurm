@@ -96,7 +96,7 @@ function batch_problem(args...;
 
     # Specify the windowing pattern
     windowed_problem = ConScape.WindowedProblem(problem(args...); 
-        buffer, centersize, threaded
+        buffer, centersize, threaded, shape=:circle
     )
 
     # Specify the batch job windowing
