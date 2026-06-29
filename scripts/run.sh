@@ -9,5 +9,5 @@
 set -o errexit  # Exit the script on any error
 set -o nounset  # Treat any unset variables as an error
 module --quiet purge   # Clear any inherited modules
-module load Julia/1.11.3-linux-x86_64
+module load Julia/1.12.2
 julia --threads=4 --project=.. run.jl $1 # Lock to threads=4 so threads == cpus
