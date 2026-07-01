@@ -19,4 +19,4 @@ batch_init = init(batch_problem, rast, assessment; verbose=true)
 # Garbage collect before we start, just in case...
 GC.gc() 
 # Solve
-@time solve(batch_init, batch; verbose=true)
+@time solve!(batch_init, batch; verbose=true)

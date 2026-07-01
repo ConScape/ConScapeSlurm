@@ -8,7 +8,7 @@ function problem(args...)
     theta = s["theta"]::Float64
     # Define a distance transformation
     movement = RandomisedShortestPath(ExpectedCost();
-        distance_transformation=x -> exp(-x * alpha),
+        distance_transformation = ExpMinusAlpha(alpha),
         theta,
     )
 
@@ -21,6 +21,6 @@ function problem(args...)
     )
 
     ## Specify the problem
-    solver = ColumnSolver()
+    solver = ConScape.ColumnSolver()
     ConScapeProblem(; movement, measures, solver)
 end

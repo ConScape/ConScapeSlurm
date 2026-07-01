@@ -24,7 +24,7 @@ GC.gc()
 # This is all lazy because `rast` is lazy. It liekely would not fit in RAM
 # The view is to unpad the padded rasters and get the original size
 zeroed_qualities = map(ConScape.measures(batch_problem)) do _
-    (@view rast.source_qualities[pad+1:end-pad, pad+1:end-pad]) .* 0
+    (@view rast.sourcequality[pad+1:end-pad, pad+1:end-pad]) .* 0
 end |> RasterStack
 
 # Write the destination rasters
@@ -55,4 +55,4 @@ dest = RasterStack(dest_filenames;
 end
 
 # Show the chunk pattern in the output
-display(Rasters.eachchunk(dest.ch))
+display(Rasters.eachchunk(dest.fh))

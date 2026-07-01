@@ -71,12 +71,12 @@ function raster(args...)
     pad = settings["buffer"]::Int
 
     # Load rasters lazily
-    source_qualities = Raster(source_qualities_path; lazy=true, missingval=NaN)
-    target_qualities = Raster(target_qualities_path; lazy=true, missingval=NaN)
-    affinities = Raster(affinities_path; lazy=true, missingval=NaN)
+    sourcequality = Raster(source_qualities_path; lazy=true, missingval=NaN)
+    targetquality = Raster(target_qualities_path; lazy=true, missingval=NaN)
+    steplikelihood = Raster(affinities_path; lazy=true, missingval=NaN)
     
     # Here we assume affinities and qualities are the same
-    st = RasterStack((; source_qualities, target_qualities, affinities))
+    st = RasterStack((; sourcequality, targetquality, steplikelihood))
     # Pad the raster border with the buffer size
     return DiskArrays.pad(st, (X=(pad, pad), Y=(pad, pad)); fill=NaN)
 end

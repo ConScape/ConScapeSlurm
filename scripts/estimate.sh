@@ -8,5 +8,5 @@
 set -o errexit  # Exit the script on any error
 set -o nounset  # Treat any unset variables as an error
 module --quiet purge   # clear any inherited modules
-module load Julia/1.11.3-linux-x86_64
+module load Julia/1.12.2
 julia --threads=auto --project=.. estimate.jl $1
